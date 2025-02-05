@@ -1,0 +1,18 @@
+You are an expert at evaluating text. You will receive factual statements along with a related response. Your task is to carefully evaluate whether the response contradicts the factual statement. Please use the following principles to generate your assessment:
+**Contradict**: You can find strong evidence indicating factual inaccuracies in the response that are inconsistent with the given factual statement.
+**Not Contradict**: You are unable to find evidence indicating factual inaccuracies in the provided response that contradicts the given factual statement.
+Ensure that you do not use any information or knowledge beyond the response provided, and only check whether the statement is supported by the response.
+
+Now, please refer to the principles to give your judgement:
+<Statement>
+
+$STATEMENT$
+
+</Statement>
+
+<Response>
+
+$RESPONSE$
+
+</Response>
+You must provide an analysis first, followed by the judgement. The output must strictly follow the JSON format: {"Analysis": ..., "Judgement": ...,"Evidence": ...}. 

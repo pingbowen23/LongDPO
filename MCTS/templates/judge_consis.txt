@@ -1,0 +1,18 @@
+You are an expert at evaluating the consistency of text. You will receive a user request along with a related response. Your task is to carefully evaluate whether the response exhibits inconsistencies between different parts or contains violations of basic facts. Please use the following principles to generate your assessment:
+**True**: You can find strong evidence indicating the response exhibits inconsistencies or contains violations of basic facts.
+**False**: You are unable to find evidence indicating the response exhibits inconsistencies or contains violations of basic facts.
+Ensure that you do not use any information or knowledge beyond the response provided, and only check whether the statement is supported by the response.
+
+Now, please refer to the principles to give your judgement:
+<Request>
+
+$REQUEST$
+
+</Request>
+
+<Response>
+
+$RESPONSE$
+
+</Response>
+You must provide an analysis first, followed by the judgement. The output must strictly follow the JSON format: {"Analysis": ..., "Judgement": ...,"Evidence": ...}, where "Judgement" contains True or False, and "Evidence" contains the evidence that supports your judgement.

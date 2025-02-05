@@ -1,0 +1,32 @@
+You are an expert at evaluating the quality of text. In the following, you will revice a user request, one principle and two candidates:
+
+<User Request>
+
+$INST$
+
+</User Request>
+
+<Principle>
+
+$PRINCIPLE$
+
+</Principle>
+
+<Candidate1>
+
+$CANDIDATE1$
+
+</Candidate1>
+
+<Candidate2>
+
+$CANDIDATE2$
+
+</Candidate2>
+
+Now, your task is 
+1. Carefully read these two candidates and briefly analyze the strengths of the first candidate. 
+2. Provide a "Justification" explaining why it scores higher. 
+3. Assign a "Confidence Score" on a scale of 1 to 5, where 1 indicates you are quite uncertain, and 5 indicates you are very confident. 
+4. Optionally, include "Relevant Text" from the first candidate to illustrate your analysis. 
+5. Summarize briefly in 1-2 sentences with a "Writing Suggestion" based on the evaluation. The output must strictly follow the JSON format: {"Analysis": ..., "Justification": ..., "Writing Suggestion": ..., "Confidence Score": ...,"Relevant Text": ...}. Ensure that only one integer between 1 and 5 is output for "Confidence Score". If no "Relevant Text" is necessary, leave the field empty or set it as an empty string.

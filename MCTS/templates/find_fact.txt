@@ -1,0 +1,13 @@
+You're an expert in natural language processing and information retrieval. You will receive a response. Your task is to extract factual statements from the response provided. 
+
+Factual statements are usually conveyed through individual sentences. They should not include introductory sentences, transitional sentences, summaries, or any inferences. If a factual statement is missing a subject or contains pronouns like "he/she/it/these/those," the subject must be explicitly added, or the pronoun must be clarified based on the context.
+
+Now, please process the following AI assistant’s response:
+
+<Response>
+
+$RESPONSE$
+
+</Response>
+
+Please carefully read and analyze the given content. Then, breaking the factual content. After extracting each factual information, you must first determine the "Validity" whether it contradicts your internal knowledge, where "True" indicates a contradiction, "False" indicates no contradiction, and "Unsure" means uncertain. Provide the relevant "Evidence" accordingly. Then, output the result in the following format: {"Analysis": ..., "Fact1": {"Content":...,"Validity":...,"Evidence":...}, "Fact2": {"Content":...,"Validity":...,"Evidence":...},...}. Please provide the analysis and factual information in the format as described above. The "Content" is the factual statement, "Validity" is the result of the analysis, and "Evidence" is the supporting evidence for the factual statement.

@@ -1,0 +1,46 @@
+You are an expert at evaluating the quality of text.
+
+As an impartial evaluator, please assess the assistant’s response to a user’s requirements. Now, you will receive specific principles that provide the criteria for evaluating the response. Principles begin,
+**Principle1**: The response is accurate and free of factual errors.
+
+**Principle2**: The response meets the user’s purpose and needs.
+
+**Principle3**: The response is non-toxic and safe.
+
+**Principle4**: The response meets the user’s formatting requirements and maintains logical consistency.
+
+**Principle5**: The response contains diverse and comprehensive information with minimal repetition.
+
+**Principle6**: The response provides an excellent reading experience.
+
+**Principle7**: The response is insightful and provides the user with additional avenues for thought. Principles end.
+
+In the next, you will receive detailed guidelines to help you rate the response according to each principle. Now, guidelines begin
+
+**5**: A perfect response with no improvement needed. The content is comprehensive, accurate, clear, and well-structured. The response fully addresses all aspects of the question or need without any omissions or errors.
+
+**4**: A very good response with minor issues. It is almost perfect but may have slight areas that could be improved, such as minor details that are unclear or a small omission. Overall, it still meets the need effectively.
+
+**3**: An acceptable response that generally meets the question or need but has noticeable shortcomings. The content might be incomplete or unclear, or there may be minor grammar or logical errors. It needs improvement but is still functional.
+
+**2**: A response with significant issues that requires substantial improvement. The content is incomplete, unclear, or contains major errors, omissions, or misunderstandings. It does not fully satisfy the request.
+
+**1**: A completely inadequate response that fails to meet the question or need. It contains serious errors or misunderstandings and cannot provide useful help. 
+
+Guidelines end. 
+
+Now, you will receive the user request and the assistant's response to evaluate. 
+
+<User Request>
+
+$INST$
+
+</User Request>
+
+<Response>
+
+$RESPONSE$
+
+</Response>
+
+Your task is to evaluate the quality of the response and assign a rating with distinguishable differentiation for each principle. When rating, please carefully read the guidelines and ensure your ratings fully adhere to them. You must first provide a brief analysis of its quality, then determine the weights for each "Principle", for example {"Principle1": [0.2,0.2,0.2,0.2,0.2]} represents the final score is 0.2 * 1 + 0.2 * 2 + 0.2 * 3 + 0.2 * 4 + 0.2 * 5 = 3. The output must strictly follow the JSON format: {"Analysis": ..., "Principle1": [..,..,..,..,..], "Principle2": [..,..,..,..,..], "Principle3": [..,..,..,..,..], "Principle4": [..,..,..,..,..], "Principle5": [..,..,..,..,..], "Principle6": [..,..,..,..,..], "Principle7": [..,..,..,..,..]}. You do not need to consider whether the response meets the user's length requirements in your evaluation. Ensure that only one integer or float is output for each principle.
