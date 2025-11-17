@@ -13,6 +13,7 @@ The official repository containing the code for LongDPO.
 </p>
 
 # 🔥 News
+- May 2025: Our paper has been accepted by ACL 2025.
 - Feb 2025: We release our code.
 
 # 💡 Quick Start For Eval
